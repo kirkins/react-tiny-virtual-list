@@ -310,7 +310,7 @@ export default class VirtualList extends React.PureComponent<Props, State> {
     }
 
     return (
-      <div ref={this.getRef} {...props} onScroll={this.handleScroll} style={{...STYLE_WRAPPER, ...style, height, width}}>
+      <div ref={this.getRef} {...props} onScroll={this.handleScroll} style={{...STYLE_WRAPPER, ...style, width}}>
         <div style={{...STYLE_INNER, [sizeProp[scrollDirection]]: this.sizeAndPositionManager.getTotalSize()}}>
           {items}
         </div>
